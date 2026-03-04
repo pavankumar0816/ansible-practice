@@ -10,7 +10,7 @@
   tasks:
   - name: task level variables
     vars:
-      course: NodeJs
-      trainer: "Pavan"
+      # course: NodeJs
+      # trainer: "Pavan"
     ansible.builtin.debug:
      msg: "Course is {{course}} and Trainer is {{trainer}}"
