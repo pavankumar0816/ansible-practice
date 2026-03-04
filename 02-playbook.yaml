@@ -1,5 +1,6 @@
 - name: Installing nginx server
   hosts: local
+  become: yes
   connection: local
   tasks:
   - name: Installing nginx web server
@@ -12,4 +13,3 @@
       name: nginx
       state: started
       enabled: yes
-      
