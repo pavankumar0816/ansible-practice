@@ -10,4 +10,4 @@
     vars:
       course: NodeJs
     ansible.builtin.debug:
-    msg: "Course is {{course}}"
+     msg: "Course is {{course}}"
