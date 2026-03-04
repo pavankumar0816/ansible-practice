@@ -1,0 +1,11 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+    course: MERN
+    desc: Backend
+    trainer: pavan
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Course is {course} and Trainer is {trainer}"
