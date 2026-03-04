@@ -1,6 +1,6 @@
 - name: Installing nginx server
   hosts: local
-  become: yes
+  # become: yes
   connection: local
   tasks:
   - name: Installing nginx web server
