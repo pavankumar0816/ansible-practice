@@ -1,7 +1,7 @@
 - name: Installing nginx server
   hosts: local
   # become: yes
-  # connection: local
+  connection: local
   tasks:
   - name: Installing nginx web server
     ansible.builtin.package:
