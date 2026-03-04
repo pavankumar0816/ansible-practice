@@ -1,0 +1,13 @@
+- name: Task level variables
+  hosts: local
+  connection: local
+  vars:
+    course: "MERN STACK"
+    duration: "6 months"
+    trainer: "pmpk"
+  tasks:
+  - name: task level variables
+    vars:
+      course: NodeJs
+      ansible.builtin.debug:
+      msg: "Course is {{course}}"
