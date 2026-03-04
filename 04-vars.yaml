@@ -5,6 +5,8 @@
     course: "MERN STACK"
     duration: "6 months"
     trainer: "pmpk"
+  var_files:
+  - course.yaml
   tasks:
   - name: task level variables
     vars:
