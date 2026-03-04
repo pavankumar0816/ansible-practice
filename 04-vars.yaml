@@ -9,5 +9,5 @@
   - name: task level variables
     vars:
       course: NodeJs
-      ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Course is {{course}}"
