@@ -14,3 +14,20 @@
       # trainer: "Pavan"
     ansible.builtin.debug:
      msg: "Course is {{course}} and Trainer is {{trainer}}"
+
+
+- name: Print uname and passowrd
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: Enter username
+    private: false
+
+  - name: password
+    prompt: enter password
+    private: true
+  tasks:
+  - name: print uname & pwd
+    ansible.builtin.debug:
+      msg: "Uname is {{username}} and pwd is {{password}}"
