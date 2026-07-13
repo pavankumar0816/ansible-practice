@@ -5,9 +5,7 @@
     course: "Ansible"
     Duration: "1 week"
     Trainer: "PMPK"
-  
   tasks:
   - name: print variables
     ansible.builtin.debug:
       msg: "Course name: {{ course }} || Duration: {{ Duration }} || Trainer: {{ Trainer }}"
-      
