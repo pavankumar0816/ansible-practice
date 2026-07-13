@@ -13,3 +13,11 @@
   - name: play-2 and task-1
     ansible.builtin.debug:
       msg: "Task-1 from play-2"
+
+- name: Play-3 pmpk
+  hosts: local
+  connection: local
+  tasks:
+  - name: play-3 and task-1
+    ansible.builtin.debug:
+      msg: "Task-1 from play-3"
