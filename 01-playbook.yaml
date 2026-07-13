@@ -3,4 +3,5 @@
   connection: local
   tasks:
   - name: ping the server
-    ansible.builtin.ping: 
+    ansible.builtin.ping:
+     msg: "Pong" 
