@@ -12,5 +12,7 @@
   
   tasks:
   - name: print uname & pwd
+    vars:
+     username: pavan 
     ansible.builtin.debug:
       msg: "Uname is {{ username }} and pwd is {{ password }}"
