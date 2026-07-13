@@ -1,0 +1,12 @@
+- name: Task level variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: print task level variables
+    vars:
+      Course: "Devops"
+      Trainer: "PMPK"
+
+    ansible.builtin.debug:
+      msg: "Course name: {{ Course }} || Trainer: {{ Trainer }}"
+      
