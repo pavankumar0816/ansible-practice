@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  Course: "Ansible"
+   Course: "Ansible"
   tasks:
   - name: print task level variables
     vars:
