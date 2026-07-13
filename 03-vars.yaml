@@ -2,10 +2,12 @@
   hosts: local
   connection: local
   vars:
-    course: MERN
-    desc: Backend
-    trainer: pavan
+    course: "Ansible"
+    Duration: "1 week"
+    Trainer: "PMPK"
+  
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "Course is {{ course }} and Trainer is {{trainer}}"
+      msg: "Course name: {{ course }} || Duration: {{ Duration }} || Trainer: {{ Trainer }}"
+      
