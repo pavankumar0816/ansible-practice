@@ -5,3 +5,11 @@
   - name: "Printing variables from args"
     ansible.builtin.debug:
       msg: "Course is {{course}}"
+
+- name: from inventory
+  hosts: local
+  connection: local
+  tasks:
+  - name: Printing varibales
+    ansible.builtin.debug:
+      msg: "{{ course }}"
