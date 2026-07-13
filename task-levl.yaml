@@ -3,11 +3,10 @@
   connection: local
   vars:
    Course: "Ansible"
+   Trainer: "Pavan"
   tasks:
   - name: print task level variables
     vars:
       Course: "Devops"
-      Trainer: "PMPK"
-
     ansible.builtin.debug:
       msg: "Course name: {{ Course }} || Trainer: {{ Trainer }}"
