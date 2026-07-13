@@ -4,7 +4,9 @@
   vars:
     username: "mani"
   vars_prompt:
-  
+  - name: username
+    prompt: Enter username
+    private: false
   
   - name: password
     prompt: Enter Password
