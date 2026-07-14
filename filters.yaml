@@ -7,10 +7,10 @@
       name: pavan
       age: 22
       city: TPG
-    tasks:
-    - frontend
-    - backend
-    - db 
+    courses:
+    - devops
+    - full stack
+    - AIOPS 
   tasks:
   - name: print msg
     ansible.builtin.debug:
@@ -27,7 +27,7 @@
 
   - name: convert list to map
     ansible.builtin.debug:
-      msg: "{{ tasks }}"
+      msg: "{{ courses | items2dict }}"
   
 
   
