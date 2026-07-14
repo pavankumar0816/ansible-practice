@@ -16,4 +16,4 @@
   
   - name: display output
     ansible.builtin.debug:
-      msg: "{{ output }}"
+      msg: "{{ output.matched }}"
