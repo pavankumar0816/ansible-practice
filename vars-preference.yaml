@@ -5,13 +5,18 @@
     NAME: "Pavan from play"
   vars_files:
   - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: Enter name
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: Enter name
+  #   private: false
   tasks:
   - name: print name
     # vars:
     #   NAME: "Pavan from task"
     ansible.builtin.debug:
       msg: "HI {{ NAME }}"
+
+# ARGS
+# Task
+# File
+# Prompt
