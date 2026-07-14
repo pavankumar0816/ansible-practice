@@ -2,16 +2,16 @@
   hosts: local
   connection: local
   vars:
-    name: "Pavan from play"
+    NAME: "Pavan from play"
   vars_files:
   - course.yaml
   vars_prompt:
-  - name: name
+  - name: NAME
     prompt: Enter name
     private: false
   tasks:
   - name: print name
     vars:
-      name: "Pavan from task"
+      NAME: "Pavan from task"
     ansible.builtin.debug:
-      msg: "Name: {{ name }}"
+      msg: "HI {{ NAME }}"
