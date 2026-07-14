@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: read file
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "{{ lookup('ansible.builtin.file'), '/etc/test.txt' }}"
