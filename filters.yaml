@@ -19,7 +19,7 @@
 
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "{{ details }}"
+      msg: "{{ details | dict2items }}"
   
 
   
