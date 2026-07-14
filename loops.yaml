@@ -11,7 +11,8 @@
   - name: loop through list of items
     ansible.builtin.debug:
       msg: "Items:{{ item }}"
-    loop: "{{ mylist }}"
+    # loop: "{{ mylist }}"
+    loop: "{{[ 'item1', 'item2', 'item3' ]}}"
     # - "{{ ['item1', 'item2', 'item3'] }}"
     # - Item1
     # - Item2
