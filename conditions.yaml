@@ -7,7 +7,7 @@
   - name: check live or not
     ansible.builtin.debug:
       msg: "This is live"
-    when: is_livea
+    when: is_live
 
 # stat is an Ansible module that retrieves information (status) about a file, directory, or filesystem object.
 # It returns file group user, inode , exists status, size, dev, checksum,mtime,mode,group id etc....0
