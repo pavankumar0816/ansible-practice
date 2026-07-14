@@ -10,3 +10,7 @@
   - name: print user result
     ansible.builtin.debug:
       msg: "{{ user_result }}"
+
+  - name: create user
+    ansible.builtin.command: useradd pavan
+    when: user_result.rc !=0
