@@ -10,4 +10,7 @@
   - name: getting package manager
     ansible.builtin.debug:
        msg: "{{ ansible_facts.os_family }}"
-       
+  
+  - name: check red hat or not
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts.os_family == 'RedHat' }}"
