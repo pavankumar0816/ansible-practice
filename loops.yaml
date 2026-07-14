@@ -1,13 +1,18 @@
 - name: loops
   hosts:  local
   connection: local
+  vars:
+   mylist:
+    - item1
+    - item2
+    - item3
 
   tasks:
   - name: loop through list of items
     ansible.builtin.debug:
       msg: "Items:{{ item }}"
-    loop:
+    loop: "{{ mylist }}"
     # - "{{ ['item1', 'item2', 'item3'] }}"
-    - Item1
-    - Item2
-    - Item3
+    # - Item1
+    # - Item2
+    # - Item3
