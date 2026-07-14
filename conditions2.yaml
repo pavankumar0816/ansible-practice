@@ -4,8 +4,8 @@
 
   tasks:
   - name: Gathering facts
-    ansible.builtin.debug:
-      # msg: "{{ ansible_facts }}"
+    # ansible.builtin.debug:
+    #   msg: "{{ ansible_facts }}"
 
   - name: getting package manager
     ansible.builtin.debug:
