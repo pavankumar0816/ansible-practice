@@ -21,4 +21,4 @@
   - name: check file exists or not
     ansible.builtin.debug:
       msg: "File exists"
-    when: file_output.stat.exists == false
+    when: file_output.stat.exists
