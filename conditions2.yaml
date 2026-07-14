@@ -9,6 +9,5 @@
 
   - name: getting package manager
     ansible.builtin.debug:
-      msg: "{{ ansible_facts.packages }}"
-      # msg: "{{ ansible_facts.os_family }}"
+       msg: "{{ ansible_facts.os_family }}"
        
