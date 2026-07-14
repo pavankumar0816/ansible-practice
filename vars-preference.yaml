@@ -1,8 +1,8 @@
 - name: print name
   hosts: local
   connection: local
-  vars:
-    NAME: "Pavan from play"
+  # vars:
+  #   NAME: "Pavan from play"
   vars_files:
   - course.yaml
   # vars_prompt:
@@ -20,3 +20,4 @@
 # Task
 # File
 # Prompt
+# Play
