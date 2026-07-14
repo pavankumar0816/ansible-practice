@@ -8,3 +8,17 @@
     ansible.builtin.debug:
       msg: "This is live"
     when: is_live == false
+
+- name: find file exists or not
+  hosts: local
+  connection: local
+  tasks:
+  - name: check file exists or not
+    ansible.builtin.stat:
+      path: /tmp/test.txt
+    register: file_output
+  
+  - name: check file exists or not
+    ansible.builtin.debug:
+      msg: "File exists"
+    when: file_output.stat.exists
