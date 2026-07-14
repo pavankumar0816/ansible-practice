@@ -12,7 +12,8 @@
       msg: "{{ user_output.stdout_lines }}"
 
   - name: test
-    ansible.builtin.command: ls -ltr > /tmp/files.txt
+    # ansible.builtin.command: ls -ltr > /tmp/files.txt
+    ansible.builtin.shell: ls -ltr > /tmp/files.txt
     register: files_output
   
   - name: print files output
