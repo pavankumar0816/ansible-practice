@@ -10,7 +10,7 @@
     courses:
     - devops
     - full stack
-    - AIOPS 
+    - Ai
   tasks:
   - name: print msg
     ansible.builtin.debug:
