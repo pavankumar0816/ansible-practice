@@ -6,7 +6,7 @@
     ansible.builtin.debug:
       msg: "{{ lookup('ansible.builtin.file', '/tmp/test.txt') }}"
   
-  - name: search for a string
+  - name: search for a word in a file
     ansible.builtin.find:
       paths: /tmp
       patterns: 'test.txt'
@@ -16,4 +16,5 @@
   
   - name: display output
     ansible.builtin.debug:
-      msg: "{{ output.matched }}"
+      msg: "Found"
+    when: output.matched > 0
