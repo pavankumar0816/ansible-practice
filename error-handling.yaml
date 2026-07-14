@@ -7,6 +7,7 @@
     ansible.builtin.command: id pavan
     register: user_result
     ignore_errors: yes
+    changed_when: false
   
   - name: print user result
     ansible.builtin.debug:
