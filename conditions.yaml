@@ -9,6 +9,8 @@
       msg: "This is live"
     when: is_live == false
 
+# stat is an Ansible module that retrieves information (status) about a file, directory, or filesystem object.
+# It returns file group user, inode , exists status, size, dev, checksum,mtime,mode,group id etc....0
 - name: find file exists or not
   hosts: local
   connection: local
@@ -17,7 +19,12 @@
     ansible.builtin.stat:
       path: /tmp/test.txt
     register: file_output
+
+    # The registered variable looks something like this:
+    # there is a key called stat.Inside stat, there is another key called exists.
   
   - name: check file exists or not
     ansible.builtin.debug:
-      msg: "{{ file_output.stat.gr_name }}"
+      # msg: "{{ file_output.stat.gr_name }}"
+      msg: "File exists"
+    when: file_output.stat.exists
