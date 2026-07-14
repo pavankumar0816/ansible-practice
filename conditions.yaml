@@ -20,4 +20,4 @@
   
   - name: check file exists or not
     ansible.builtin.debug:
-      msg: "{{ file_output.stat.inode }}"
+      msg: "{{ file_output.stat.gr_name }}"
