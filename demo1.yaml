@@ -1,0 +1,7 @@
+- name: reading file
+  hosts: local
+  connection: local
+  tasks:
+  - name: read file
+    ansible.buitin.debug:
+      msg: "{{ lookup('ansible.builtin.file'), '/etc/test.txt' }}"
