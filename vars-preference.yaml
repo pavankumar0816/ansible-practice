@@ -1,4 +1,4 @@
-- name: print names
+- name: print name
   hosts: local
   connection: local
   vars:
